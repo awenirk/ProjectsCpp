@@ -1,0 +1,14 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="02_01_ClassWork/02_01_ClassWork.vcxproj" />
+  <Project Path="02_02_PraktWork/02_02_PraktWork.vcxproj" />
+  <Project Path="02_03_HomeWork/02_03_HomeWork.vcxproj" />
+  <Project Path="03_01_ClassWork/03_01_ClassWork.vcxproj" />
+  <Project Path="03_02_PraktWork'/03_02_PraktWork'.vcxproj" />
+  <Project Path="03_03_HomeWork'/03_03_HomeWork'.vcxproj" />
+  <Project Path="04_02_PraktWork/04_02_PraktWork.vcxproj" />
+  <Project Path="ProjectsCpp/ProjectsCpp.vcxproj" />
+</Solution>
