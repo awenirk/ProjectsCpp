@@ -10,5 +10,6 @@
   <Project Path="03_02_PraktWork'/03_02_PraktWork'.vcxproj" Id="7cd2798e-2c67-4bed-9db8-d3aa9ad9fd01" />
   <Project Path="03_03_HomeWork'/03_03_HomeWork'.vcxproj" Id="aa53488d-eaec-48a8-b13b-9b7a77d4ece7" />
   <Project Path="04_02_PraktWork/04_02_PraktWork.vcxproj" Id="d0716f4d-23b2-4dbe-903d-4bc73cc7beb3" />
+  <Project Path="04_03_HomeWork/04_03_HomeWork.vcxproj" Id="000a0d38-9e0c-43c3-8804-d716d28ae70b" />
   <Project Path="ProjectsCpp/ProjectsCpp.vcxproj" />
 </Solution>
