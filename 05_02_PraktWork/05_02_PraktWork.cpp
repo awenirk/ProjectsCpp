@@ -3,12 +3,12 @@ using namespace std;
 
 int main()
 {
-    int N = 10;
+    int N = 11;
 
     cout << endl << "Pattern 1:" << endl;
-    for (int i = 0; i <= N; i++)
+    for (int i = 0; i < N; i++)
     {
-        for (int j = 0; j <= N; j++)
+        for (int j = 0; j < N; j++)
         {
             if (i <= j)
             {
@@ -19,13 +19,13 @@ int main()
                 cout << "  ";
             }
 		}
-		cout << endl;
+        cout << "|" << endl;
     }
 
     cout << endl << "Pattern 2:" << endl;
-    for (int i = 0; i <= N; i++)
+    for (int i = 0; i < N; i++)
     {
-        for (int j = 0; j <= N; j++)
+        for (int j = 0; j < N; j++)
         {
             if (i >= j)
             {
@@ -36,15 +36,15 @@ int main()
                 cout << "  ";
             }
 		}
-		cout << endl;
+        cout << "|" << endl;
     }
 
     cout << endl << "Pattern 3:" << endl;
-    for (int i = 0; i <= N; i++)
+    for (int i = 0; i < N; i++)
     {
-        for (int j = 0; j <= N; j++)
+        for (int j = 0; j < N; j++)
         {
-            if (i <= j && i+j <= N)
+            if (i <= j && i+j < N)
             {
                 cout << "* ";
             }
@@ -53,15 +53,15 @@ int main()
                 cout << "  ";
             }
 		}
-		cout << endl;
+        cout << "|" << endl;
     }
 
     cout << endl << "Pattern 4:" << endl;
-    for (int i = 0; i <= N; i++)
+    for (int i = 0; i < N; i++)
     {
-        for (int j = 0; j <= N; j++)
+        for (int j = 0; j < N; j++)
         {
-            if (i >= j && i+j >= N)
+            if (i >= j && i+j >= N-1)
             {
                 cout << "* ";
             }
@@ -70,15 +70,15 @@ int main()
                 cout << "  ";
             }
 		}
-		cout << endl;
+        cout << "|" << endl;
     }
 
     cout << endl << "Pattern 5:" << endl;
-    for (int i = 0; i <= N; i++)
+    for (int i = 0; i < N; i++)
     {
-        for (int j = 0; j <= N; j++)
+        for (int j = 0; j < N; j++)
         {
-            if (i >= j && i+j >= N or i <= j && i + j <= N)
+            if (i <= j && i + j < N or i >= j && i + j >= N - 1)
             {
                 cout << "* ";
             }
@@ -87,15 +87,15 @@ int main()
                 cout << "  ";
             }
 		}
-		cout << endl;
+        cout << "|" << endl;
     }
 
     cout << endl << "Pattern 6:" << endl;
-    for (int i = 0; i <= N; i++)
+    for (int i = 0; i < N; i++)
     {
-        for (int j = 0; j <= N; j++)
+        for (int j = 0; j < N; j++)
         {
-            if (i <= j && i + j >= N or i >= j && i + j <= N)
+            if (i >= j && i + j < N || i <= j && i + j >= N - 1)
             {
                 cout << "* ";
             }
@@ -104,15 +104,15 @@ int main()
                 cout << "  ";
             }
         }
-        cout << endl;
+        cout << "|" << endl;
     }
 
     cout << endl << "Pattern 7:" << endl;
-    for (int i =01; i <= N; i++)
+    for (int i = 0; i < N; i++)
     {
-        for (int j = 0; j <= N; j++)
+        for (int j = 0; j < N; j++)
         {
-            if (i >= j && i + j <= N)
+            if (i >= j && i + j < N)
             {
                 cout << "* ";
             }
@@ -121,7 +121,7 @@ int main()
                 cout << "  ";
             }
         }
-        cout << endl;
+        cout << "|" << endl;
     }
 
 
@@ -139,7 +139,7 @@ int main()
                 cout << "  ";
             }
         }
-        cout << endl;
+        cout << "|" << endl;
     }
 
     cout << endl << "Pattern 9:" << endl;
@@ -156,7 +156,7 @@ int main()
                 cout << "  ";
             }
         }
-        cout << endl;
+        cout << "|" << endl;
     }
 
     cout << endl << "Pattern 10:" << endl;
@@ -173,7 +173,7 @@ int main()
                 cout << "  ";
             }
         }
-        cout << endl;
+        cout << "|" << endl;
     }
 
     
