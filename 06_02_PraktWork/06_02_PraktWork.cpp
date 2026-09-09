@@ -3,7 +3,7 @@ using namespace std;
 
 int main()
 {
-    int dob = 1, suma = 0, negative = 0, positive = 0;
+    int dob = 1, suma = 0, negative = 0, positive = 0, num1, num2, max, min;
     // 1.Оголосити одновимірний масив з 10 елементів типу int.
     // Заповнити його значеннями з клавіатури, вивести на екран та
     // підрахувати добуток елементів масиву
@@ -104,9 +104,6 @@ int main()
 
 
 
-
-
-
     // Додаткове на 12 балів:
 
     // 8. Користувач вводить прибуток фірми за рік(12
@@ -115,13 +112,35 @@ int main()
     // визначити місяць, у якому прибуток був максимальним, і
     // місяць, у якому прибуток був мінімальним, з урахуванням
     // обраного діапазону.
+    const int size = 12;
+    int arr[size] = {};
+    for (int i = 0; i < size; i++)
+    {
+        cout << "Enter profit for month: " << i + 1 << ": "; cin >> arr[i];
+    }
 
+    cout << "Enter range start: "; cin >> num1;
+    cout << "Enter range end: "; cin >> num2;
 
-
-
-
-
-
+	for (int i = num1 - 1; i < num2; i++)
+	{
+		min = arr[num1 - 1];
+		max = arr[num1 - 1];
+        for (int i = num1; i < num2; i++)
+        {
+			if (arr[i] > max)
+			{
+				max = arr[i];
+			}
+            if (arr[i] < min)
+            {
+                min = arr[i];
+            }
+        }
+	}
+	cout << "Max profit month: " << max << endl;
+	cout << "Min profit month: " << min << endl;
+	return 0;
 
 
 }
