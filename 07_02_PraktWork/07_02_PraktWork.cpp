@@ -57,41 +57,64 @@ int main()
     const int rows3 = 4, cols3 = 5;
     int arr3[rows3][cols3] = {};
     a = 0;
-    for (int i = 0; i < cols3; i++)
+    for (int i = 0; i < rows3; i++)
     {
-        for (int j = 0; j < rows3; j++)
+        for (int j = 0; j < cols3; j++)
         {
             arr3[i][j] = -20 + rand() % 40;
-            cout << left << setw(6) << arr3[i][j] << "|";
+            cout<< setw(6) << arr3[i][j];
             if (arr3[i][j] > 0) a++;
         }
-        cout << endl;
+        cout << "|" << endl;
     }
-    cout << "===========================#" << endl << a << endl;
+    cout << "==============================#" << endl;
+    cout << "Positive elements: " << a << endl;
+    */
 
 
     // 5. Дано масив розміром 5×4 з елементами дійсного типу(додатні та від’ємні).
     // Визначити добуток всіх додатніх елементів.
-    /*
-    */
-
-
-
-
     // 6. Дано масив розміром 5×4 з елементами дійсного типу(позитивні та від’ємні).
     // Визначити добуток всіх від’ємних елементів.
     /*
+    const int rows4 = 4, cols4 = 5;
+    int arr4[rows4][cols4] = {};
+    a = 1, b = 1;
+    for (int i = 0; i < rows4; i++)
+    {
+        for (int j = 0; j < cols4; j++)
+        {
+            arr4[i][j] = -10 + rand() % 20;
+            cout << setw(6) << arr4[i][j];
+            if (arr4[i][j] > 0) a *= arr4[i][j];
+			else if (arr4[i][j] < 0) b *= arr4[i][j];
+        }
+        cout << "|" << endl;
+    }
+    cout << "==============================#" << endl;
+    cout << "Product of positive elements: " << a << endl;
+    cout << "Product of negative elements: " << b << endl;
     */
-
-
 
 
     // 7. Дано масив розміром 4×4 з елементами цілого типу.Визначити кількість
     // елементів, які б при діленні на 6 давали залишок 1. 13 % 6 = 1
     /*
+	const int rows5 = 4, cols5 = 4;
+    int arr5[rows5][cols5] = {};
+    a = 0;
+    for (int i = 0; i < rows5; i++)
+    {
+        for (int j = 0; j < cols5; j++)
+        {
+            arr5[i][j] = 1 + rand() % 20;
+            cout << setw(5) << arr5[i][j];
+            if (arr5[i][j] % 6 == 1) a++;
+        }
+        cout << "|" << endl;
+    }
+    cout << "elements with remainder 1 when divided by 6: " << a << endl;
     */
-
-
 
 
     // 8. Дано масив розміром 5хб цілого типу.Знайти мінімальний елемент.
