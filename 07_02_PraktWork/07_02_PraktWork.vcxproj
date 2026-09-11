@@ -125,6 +125,9 @@
   <ItemGroup>
     <ClCompile Include="07_02_PraktWork.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="07_02_PraktWork.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

@@ -42,13 +42,14 @@ int main()
         for (int j = 0; j < rows2; j++)
         {
             arr2[i][j] = -20 + rand() % 40;
-            cout << left << setw(6) << arr2[i][j] <<"|";
+            cout << setw(6) << arr2[i][j];
             if (arr2[i][j] < 0) arr2[i][j] = arr2[i][j] * -1;
 			if (arr2[i][j] < 12) a++;
         }
-        cout << endl;
+        cout << " |" << endl;
     }
-    cout << "====================#" << endl << a << endl;
+    cout << "===========================================#" << endl;
+    cout << "Elements with absolute value less than 12: " << a << endl;
     */
 
     // 4. Дано масив розміром 4×5 з елементами цілого типу(позитивні та від’ємні).
@@ -65,9 +66,9 @@ int main()
             cout<< setw(6) << arr3[i][j];
             if (arr3[i][j] > 0) a++;
         }
-        cout << "|" << endl;
+        cout << " |" << endl;
     }
-    cout << "==============================#" << endl;
+    cout << "===============================#" << endl;
     cout << "Positive elements: " << a << endl;
     */
 
@@ -89,9 +90,9 @@ int main()
             if (arr4[i][j] > 0) a *= arr4[i][j];
 			else if (arr4[i][j] < 0) b *= arr4[i][j];
         }
-        cout << "|" << endl;
+        cout << " |" << endl;
     }
-    cout << "==============================#" << endl;
+    cout << "===============================#" << endl;
     cout << "Product of positive elements: " << a << endl;
     cout << "Product of negative elements: " << b << endl;
     */
@@ -111,8 +112,9 @@ int main()
             cout << setw(5) << arr5[i][j];
             if (arr5[i][j] % 6 == 1) a++;
         }
-        cout << "|" << endl;
+        cout << " |" << endl;
     }
+    cout << "=====================#" << endl;
     cout << "elements with remainder 1 when divided by 6: " << a << endl;
     */
 
@@ -120,17 +122,48 @@ int main()
     // 8. Дано масив розміром 5хб цілого типу.Знайти мінімальний елемент.
     // 9. Дано масив розміром 5×6 цілого типу.Знайти максимальний елемент.
     /*
+    const int rows6 = 5, cols6 = 6;
+    int arr6[rows6][cols6] = {};
+    for (int i = 0; i < rows6; i++)
+    {
+        for (int j = 0; j < cols6; j++)
+        {
+            arr6[i][j] = 1 + rand() % 100;
+            cout << setw(5) << arr6[i][j];
+            if (i == 0 && j == 0) {
+                max = arr6[i][j];
+                min = arr6[i][j];
+            }
+            else {
+                if (arr6[i][j] > max) max = arr6[i][j];
+                if (arr6[i][j] < min) min = arr6[i][j];
+            }
+        }
+        cout << " |" << endl;
+    }
+	cout << "===============================#" << endl;
+	cout << "Max element: " << max << endl;
+	cout << "Min element: " << min << endl;
     */
-
-
-
 
     // 10. Дано масив розміром 5×4 з елементами дійсного типу(позитивні та від’ємні).
     // Визначити суму всіх від’ємних елементів.
     /*
+    const int rows7 = 5, cols7 = 4;
+    int arr7[rows7][cols7] = {};
+    a = 0;
+    for (int i = 0; i < rows7; i++)
+    {
+        for (int j = 0; j < cols7; j++)
+        {
+            arr7[i][j] = -10 + rand() % 20;
+            cout << setw(5) << arr7[i][j];
+            if (arr7[i][j] < 0) a++;
+        }
+        cout << " |" << endl;
+    }
+	cout << "=====================#" << endl;
+	cout << "Sum of negative elements: " << a << endl;
     */
-
-
-
 
 }

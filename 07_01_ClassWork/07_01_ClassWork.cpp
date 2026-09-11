@@ -42,7 +42,6 @@ int main()
     }
     cout << endl;
     */
-
     const int rows = 10;
     const int cols = 10;
     int arr2D[rows][cols] = {};
