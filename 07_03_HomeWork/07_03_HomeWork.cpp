@@ -320,4 +320,36 @@ int main()
     // 9 --> i + j <= N - 1
     // 0 --> i + j > N
 
+
+    // Мій шаблон:
+    /*
+    cout << endl << "\tPattern MMM:" << endl; // i >= j && i + j >= N - 1
+    cout << "==================================#" << endl;
+    for (int i = 0; i < N; i++) {
+        for (int j = 0; j < N; j++) {
+            if (FORMULA) {
+                arrMMM[i][j] = 1 + rand() % 64;
+                elfMMM++;
+            }
+            else arrMMM[i][j] = 0;
+    
+            cout << setw(3) << arrMMM[i][j];
+    
+            if (i == 0 && j == 0) {
+                minMMM = arrMMM[i][j];
+                maxMMM = arrMMM[i][j];
+            }
+            else {
+                if (arrMMM[i][j] < minMMM && FORMULA) minMMM = arrMMM[i][j];
+                if (arrMMM[i][j] > maxMMM && FORMULA) maxMMM = arrMMM[i][j];
+            }
+        }
+        cout << " |" << endl;
+    }
+    cout << "==================================#" << endl;
+    cout << "Min element in MMM pattern: " << setw(3) << minMMM << " | 64" << endl;
+    cout << "Max element in MMM pattern: " << setw(3) << maxMMM << " | 64" << endl;
+    cout << "Elements filled: " << setw(3) << elfMMM << " | 121" << endl;
+    */
+
 }
