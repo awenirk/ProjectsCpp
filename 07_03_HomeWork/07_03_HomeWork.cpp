@@ -303,7 +303,7 @@ int main()
         }
         cout << " |" << endl;
     }
-    cout << "==================================#" << endl;
+    cout << "==================================#" << endl; 
     cout << "Min element in 0 pattern: " << setw(3) << min0 << " | 64" << endl;
     cout << "Max element in 0 pattern: " << setw(3) << max0 << " | 64" << endl;
     cout << "Elements filled: " << setw(3) << elf0 << " | 121" << endl;
@@ -319,6 +319,7 @@ int main()
     // 8 --> i <= j && i + j >= N - 1
     // 9 --> i + j <= N - 1
     // 0 --> i + j > N
+
 
 
     // My tamplate: (Мій шаблон)
