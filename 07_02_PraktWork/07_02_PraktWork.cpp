@@ -8,14 +8,13 @@ int main()
     int a, b, max, min;
     srand(time(0));
     setlocale(LC_ALL, "Ukrainian");
-
     // 1. Дано масив розміром 4×3 з елементами цілого типу. 
     // Визначити кількість елементів відмінних від нуля. (0-5)
     // 2. Дано масив розміром 3×3 з елементами цілого типу.
     // Визначити кількість елементів які б дорівнювали нулю.
     /*
 	const int rows1 = 4, cols1 = 3;
-	int arr1[rows1][cols1];
+	int arr1[rows1][cols1] = {};
     a = 0, b = 0;
     for (int i = 0; i < rows1; i++)
     {
@@ -36,7 +35,7 @@ int main()
     // Визначити кількість елементів, модуль яких менший 12. (-20 + rand() % 40)
     /*
     const int rows2 = 7, cols2 = 3;
-    int arr2[cols2][rows2];
+    int arr2[cols2][rows2] = {};
     a = 0;
     for (int i = 0; i < cols2; i++)
     {
@@ -56,6 +55,21 @@ int main()
     // Визначити кількість позитивних елементів.
     /*
     */
+    const int rows3 = 4, cols3 = 5;
+    int arr3[rows3][cols3] = {};
+    a = 0;
+    for (int i = 0; i < cols3; i++)
+    {
+        for (int j = 0; j < rows3; j++)
+        {
+            arr3[i][j] = -20 + rand() % 40;
+            cout << left << setw(6) << arr3[i][j] << "|";
+            if (arr3[i][j] > 0) a++;
+        }
+        cout << endl;
+    }
+    cout << "===========================#" << endl << a << endl;
+
 
 
 
