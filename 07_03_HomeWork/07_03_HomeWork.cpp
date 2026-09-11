@@ -168,7 +168,7 @@ int main()
     cout << "==================================#" << endl;
     for (int i = 0; i < N; i++) {
         for (int j = 0; j < N; j++) {
-            if (j && i + j < N || i <= j && i + j >= N - 1) {
+            if (i >= j && i + j < N || i <= j && i + j >= N - 1) {
                 arr6[i][j] = 1 + rand() % 64;
                 elf6++;
             }
@@ -181,8 +181,8 @@ int main()
                 max6 = arr6[i][j];
             }
             else {
-                if (arr6[i][j] < min6 && j && i + j < N || i <= j && i + j >= N - 1) min6 = arr6[i][j];
-                if (arr6[i][j] > max6 && j && i + j < N || i <= j && i + j >= N - 1) max6 = arr6[i][j];
+                if (arr6[i][j] < min6 && i >= j && i + j < N || i <= j && i + j >= N - 1) min6 = arr6[i][j];
+                if (arr6[i][j] > max6 && i >= j && i + j < N || i <= j && i + j >= N - 1) max6 = arr6[i][j];
             }
         }
         cout << " |" << endl;
@@ -284,7 +284,7 @@ int main()
     cout << "==================================#" << endl;
     for (int i = 0; i < N; i++) {
         for (int j = 0; j < N; j++) {
-            if (i + j > N) {
+            if (i + j > N-2) {
                 arr0[i][j] = 1 + rand() % 64;
                 elf0++;
             }
@@ -297,8 +297,8 @@ int main()
                 max0 = arr0[i][j];
             }
             else {
-                if (arr0[i][j] < min0 && i + j > N) min0 = arr0[i][j];
-                if (arr0[i][j] > max0 && i + j > N) max0 = arr0[i][j];
+                if (arr0[i][j] < min0 && i + j > N-2) min0 = arr0[i][j];
+                if (arr0[i][j] > max0 && i + j > N-2) max0 = arr0[i][j];
             }
         }
         cout << " |" << endl;
