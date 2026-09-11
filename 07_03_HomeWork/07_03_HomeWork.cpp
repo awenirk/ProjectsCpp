@@ -321,7 +321,7 @@ int main()
     // 0 --> i + j > N
 
 
-    // Мій шаблон:
+    // My tamplate: (Мій шаблон)
     /*
     cout << endl << "\tPattern MMM:" << endl; // i >= j && i + j >= N - 1
     cout << "==================================#" << endl;
