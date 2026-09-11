@@ -113,6 +113,7 @@ int main()
     // м≥с€ць, у €кому прибуток був м≥н≥мальним, з урахуванн€м
     // обраного д≥апазону.
     /*
+    */
     const int size = 12;
     int arr[size] = {};
     for (int i = 0; i < size; i++)
@@ -141,7 +142,7 @@ int main()
 	}
 	cout << "Max profit month: " << max << endl;
 	cout << "Min profit month: " << min << endl;
-    */
+    
 
 
 }
