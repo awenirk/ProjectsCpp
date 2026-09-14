@@ -5,14 +5,17 @@ using namespace std;
 
 
 void drawSquare(int N, int K);
-
+int factorial(int num);
 
 int main()
 {
     setlocale(LC_ALL, "Ukrainian");
     srand(time(0));
+    int a = 60;
 
     drawSquare(4, 10);
+    cout << "Enter factorial: "; cin >> a;
+    cout << factorial(a) << endl;
 
 }
 //1.Написати функцію, що виводить на екран прямокут-
@@ -27,7 +30,13 @@ void drawSquare(int N, int K) {
 }
 // 2. Написати функцію, яка обчислює факторіал переда -
 // ного їй числа. 5!= 1 * 2 * 3 * 4 * 5
-void 
+int factorial(int num) {
+    int num1 = 1;
+    for (int i = 1; i <= num; i++) {
+        num1 *= i;
+    }
+    return num1;
+}
 
 
 
