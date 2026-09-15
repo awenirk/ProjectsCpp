@@ -3,7 +3,7 @@
 #include <clocale>
 using namespace std;
 
-const int size = 25;
+const int globalSize = 25;
 
 void drawSquare(int N, int K);
 long long factorial(long long num);
@@ -50,8 +50,8 @@ int main()
     int start = 0,
         countNums = 100,
         set = 3,
-        size = ::size,
-        arr[::size]{};
+        size = ::globalSize,
+        arr[::globalSize]{};
     
     // cout << "Enter start array: "; cin >> start;
     // cout << "Enter count nums in array: "; cin >> countNums;
@@ -172,7 +172,6 @@ void minMax2(int arr[], int size) {
 // переданого њй масиву на протилежний.
 void reverseArr(int arr[], int size) {
     int start = 0, end = size - 1;
-    // int arrRevers[::size]{};
     for (int i = start; i < end; i++)
     {
         int temp = arr[start];
