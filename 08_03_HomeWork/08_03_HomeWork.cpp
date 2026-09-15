@@ -3,24 +3,25 @@
 #include <clocale>
 using namespace std;
 
-const int size = 25;
-
-void PosNegZero(int arr[], int size);
-
-
-
+const int size = 100;
+// Не по завданню, для зручності:
 void fillArr(int arr[], int size, int start, int max);
 void outArr(int arr[], int size, int set);
 void okantovka(int width);
 void minMax(int arr[], int size);
+
+
+
+
+void PosNegZero(int arr[], int size);
 
 int main()
 {
     setlocale(LC_ALL, "Ukrainian");
     srand(time(0));
 
-    int start = -100,
-        countNums = 200,
+    int start = -10,
+        countNums = 20,
         set = 3,
         size = ::size,
         arr[::size]{};
@@ -31,10 +32,11 @@ int main()
     PosNegZero(arr, size);
 
 }
+
 // Не по завданню, для зручності:
 void fillArr(int arr[], int size, int start, int max) {
     for (int i = 0; i < size; i++) {
-        arr[i] = start + rand() % max;
+        arr[i] = start + rand() % max+1;
     }
 }
 void outArr(int arr[], int size, int set) {
@@ -64,6 +66,7 @@ void minMax(int arr[], int size) {
     cout << "Max num -->" << setw(4) << max << endl;
     cout << "Min num -->" << setw(4) << min << endl;
 }
+
 
 // Завдання 1. Написати функцію, яка приймає дві дати
 // (тобто функція приймає шість параметрів) та обчислює
