@@ -165,8 +165,8 @@ void minMax2(int arr[], int size) {
         if (arr[i] > max) max = arr[i];
         if (arr[i] < min) min = arr[i];
     }
-    cout << "Max num -->" << max << endl;
-    cout << "Min num -->" << min << endl;
+    cout << "Max num --> " << setw(5) << max << endl;
+    cout << "Min num --> " << setw(5) << min << endl;
 }
 // 2. Написати функцію, яка міняє порядок елементів
 // переданого їй масиву на протилежний.
