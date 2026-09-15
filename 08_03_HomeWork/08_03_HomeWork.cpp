@@ -61,8 +61,8 @@ void minMax(int arr[], int size) {
         if (arr[i] > max) max = arr[i];
         if (arr[i] < min) min = arr[i];
     }
-    cout << "Max num -->" << max << endl;
-    cout << "Min num -->" << min << endl;
+    cout << "Max num -->" << setw(4) << max << endl;
+    cout << "Min num -->" << setw(4) << min << endl;
 }
 
 // Завдання 1. Написати функцію, яка приймає дві дати
