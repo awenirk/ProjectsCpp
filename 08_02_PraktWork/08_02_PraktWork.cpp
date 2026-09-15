@@ -135,7 +135,7 @@ bool isPositive(int num) {
 // Не по завданню, для зручності:
 void fillArr(int arr[], int size, int start, int max) {
     for (int i = 0; i < size; i++) {
-        arr[i] = start + rand() % max+1;
+        arr[i] = start-1 + rand() % max+1;
     }
 }
 void outArr(int arr[], int size, int set) {

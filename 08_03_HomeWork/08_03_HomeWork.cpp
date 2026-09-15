@@ -20,13 +20,13 @@ int main()
     setlocale(LC_ALL, "Ukrainian");
     srand(time(0));
 
-    int start = -10,
-        countNums = 20,
+    int start = 0,
+        maxNum = 20,
         set = 3,
         size = ::size,
         arr[::size]{};
 
-    fillArr(arr, size, start, countNums);
+    fillArr(arr, size, start, maxNum);
     outArr(arr, size, set);
     minMax(arr, size);
     PosNegZero(arr, size);
@@ -36,7 +36,7 @@ int main()
 // Не по завданню, для зручності:
 void fillArr(int arr[], int size, int start, int max) {
     for (int i = 0; i < size; i++) {
-        arr[i] = start + rand() % max+1;
+        arr[i] = start-1 + rand() % max+1;
     }
 }
 void outArr(int arr[], int size, int set) {
