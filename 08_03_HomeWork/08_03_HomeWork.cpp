@@ -3,7 +3,7 @@
 #include <clocale>
 using namespace std;
 
-const int size = 100;
+const int size = 200;
 // Не по завданню, для зручності:
 void fillArr(int arr[], int size, int start, int max);
 void outArr(int arr[], int size, int set);
@@ -36,7 +36,7 @@ int main()
 // Не по завданню, для зручності:
 void fillArr(int arr[], int size, int start, int max) {
     for (int i = 0; i < size; i++) {
-        arr[i] = start-1 + rand() % max+2;
+        arr[i] = start + (rand() % (max-start +1));
     }
 }
 void outArr(int arr[], int size, int set) {
