@@ -36,7 +36,7 @@ int main()
 // Не по завданню, для зручності:
 void fillArr(int arr[], int size, int start, int max) {
     for (int i = 0; i < size; i++) {
-        arr[i] = start-1 + rand() % max+1;
+        arr[i] = start-1 + rand() % max+2;
     }
 }
 void outArr(int arr[], int size, int set) {
